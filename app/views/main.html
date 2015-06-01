@@ -1,0 +1,22 @@
+<div ng-controller="MainCtrl">
+ <div class="card-deck" ng-model="cards">
+   <div ng-repeat="card in cards" class="card-container" my-sortable draggable="true">
+     <div class="card-front">
+       <div>{{card.title}} <a class="config-activate">Flip</a></div>
+       <div>body</div>
+       <div>footer</div>
+     </div>
+
+     <div class="card-back">
+       <div>{{card.title}} <a class="config-return">Return</a></div>
+       <div>bad</div>
+     </div>
+
+   </div>
+   <div class="clearfix"></div>
+ </div>
+</div>
+
+<!-- <div ng-controller="TestCtrl">
+  <div my-customer></div>
+</div> -->
